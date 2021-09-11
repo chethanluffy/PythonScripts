@@ -80,7 +80,7 @@ def sentenceSimilaritybyNN(embed, es, sent):
 if __name__=="__main__":
 
     es = connect2ES();
-    embed = hub.load("/home/carlton/Downloads/universal-sentence-encoder_4")
+    embed = hub.load("universal-sentence-encoder_4")
 
     while(1):
         query=input("Enter a Query:");
