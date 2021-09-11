@@ -67,7 +67,7 @@ print("*************************************************************************
 
 #load USE4 model
 
-embed = hub.load("/home/carlton/Downloads/universal-sentence-encoder_4")
+embed = hub.load("universal-sentence-encoder_4")
 
 
 
@@ -78,7 +78,7 @@ NUM_QUESTIONS_INDEXED = 200000
 # Col-Names: Id,OwnerUserId,CreationDate,ClosedDate,Score,Title,Body
 cnt=0
 
-with open('/home/carlton/Documents/warranty_500.csv',encoding="latin1") as csvfile:
+with open('document.csv',encoding="latin1") as csvfile:
 	readCSV = csv.reader(csvfile, delimiter=',' )
 	next(readCSV, None) 
 	i=1 # skip the headers 
