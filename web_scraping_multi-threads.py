@@ -5,7 +5,7 @@ import time
 start=time.perf_counter()
 import concurrent.futures
 
-URL = "https://www.cermati.com/karir"
+URL = "https://www.websiteXYZ.com/page1"
 r = requests.get(URL)
 URL_LIST=[]
 page_soup = BeautifulSoup(r.content, 'html5lib')
