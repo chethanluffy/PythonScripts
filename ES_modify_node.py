@@ -26,7 +26,7 @@ model = hub.load(r"universal-sentence-encoder_4")
 ## Concecting to the elastic Data_base
 ES_HOST = {"host" : "localhost", "port" : 9200}
 es = Elasticsearch(hosts = [ES_HOST])
-index_name="kubota" #Index name
+index_name="XYZ" #Index name
 def text_to_vect(text):
     vector=tf.make_ndarray(tf.make_tensor_proto(model([text]))).tolist()[0]
     return vector
